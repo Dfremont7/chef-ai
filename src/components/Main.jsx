@@ -39,6 +39,15 @@ const Main = () => {
 
     return (
         <main>
+            {ingredients.length < 4 && (
+                <div className="info-message">
+                    <p>🧑‍🍳 Ready to cook? Just follow these steps:</p>
+                    <p>- Add at least <strong>4 ingredients</strong> to your list.</p>
+                    <p>- Click on <strong>"Get Recipe"</strong> to generate a delicious idea!</p>
+                    <p>You're almost there — add {4 - ingredients.length} more ingredients! 🍅🧄🥕</p>
+                </div>
+            )}
+
             <form action={addIngredient} className="add-ingredient-form">
                 <input
                     type="text"
@@ -52,7 +61,6 @@ const Main = () => {
 
             {loading && <Spinner loading={loading} />}
 
-            
             {ingredients.length > 0 &&
                 <IngredientsList
                     ref={recipeSection}
