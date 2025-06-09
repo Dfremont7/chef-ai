@@ -1,12 +1,37 @@
-# React + Vite
+# 👨‍🍳 Chef AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chef AI is a fun and interactive web app built with **React** that uses **Hugging Face AI** to generate custom recipes based on the ingredients you provide. Just add a few items from your kitchen, and let AI do the magic!
 
-Currently, two official plugins are available:
+## 🌐 Live Demo 
+https://chef-ai-dfremont7s-projects.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧠 How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Add at least **4 ingredients** you have on hand (e.g., "tomato", "pasta", "garlic", "basil").
+2. Click **"Get Recipe"**.
+3. Chef AI calls Hugging Face's inference API to generate a recipe based on your ingredients.
+4. Read and enjoy your personalized dish idea — no login required!
+
+---
+
+## 🛠️ Technologies Used
+
+- **React 19**
+- **Vite** – fast frontend tooling
+- **Hugging Face Inference API** – for recipe generation
+- **React Markdown** – to display recipe nicely
+- **React Spinners** – for loading animations
+- **dotenv** – for environment variable management
+
+---
+
+## 📦 Installation & Setup
+
+Clone the project and install dependencies:
+
+```bash
+git clone https://github.com/Dfremont7/chef-ai.git
+cd chef-ai
+npm install
