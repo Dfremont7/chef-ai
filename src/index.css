@@ -108,11 +108,13 @@ ul.ingredients-list > li {
 }
 
 .suggested-recipe-container {
-  color: #475467;
+  font-family: "Indie Flower", cursive !important;
+  border: 1px solid;
+  color: #3a75cc;
   line-height: 28px;
   font-size: 1.125rem;
   font-weight: 400;
-  background-color: #F0EFEB;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
   margin-top: 10px;
@@ -121,6 +123,13 @@ ul.ingredients-list > li {
 
 .suggested-recipe-container ul li, .suggested-recipe-container ol li {
   margin-bottom: 8px;
+}
+
+.suggested-recipe-container h1,
+.suggested-recipe-container h2,
+.suggested-recipe-container h3,
+.suggested-recipe-container h4 {
+  text-decoration: underline;
 }
 
 .spinner-container {
