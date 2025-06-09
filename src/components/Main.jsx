@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-import { getRecipeFromMistral } from "./api/recipe"
+import { getRecipeFromMistral } from "../../api/recipe.js"
 
 import IngredientsList from "./IngredientsList"
 import HuggingFaceRecipe from "./HuggingFaceRecipe"
