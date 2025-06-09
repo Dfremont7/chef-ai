@@ -37,10 +37,6 @@ const Main = () => {
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
 
-//    const removeIngredient = (ingredient) => {
-  //      setIngredients(prevIngredients => prevIngredients.filter(prevIngredients => prevIngredients !== ingredient))
-   // }
-
     return (
         <main>
             <form action={addIngredient} className="add-ingredient-form">
