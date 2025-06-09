@@ -6,7 +6,7 @@ import HuggingFaceRecipe from "./HuggingFaceRecipe"
 import Spinner from "./Spinner"
 
 const Main = () => {
-    const [ingredients, setIngredients] = useState(['fish', 'salmon', 'spinach', 'tomatoes', 'onions', 'garlic'])
+    const [ingredients, setIngredients] = useState([])
     const [recipe, setRecipe] = useState("")
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
