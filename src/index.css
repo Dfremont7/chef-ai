@@ -95,7 +95,7 @@ ul.ingredients-list > li {
   line-height: 20px;
 }
 
-.get-recipe-container button {
+.recipe-button {
   border: none;
   border-radius: 6px;
   background: #D17557;
@@ -117,7 +117,7 @@ ul.ingredients-list > li {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
-  margin-top: 10px;
+  margin: 10px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 

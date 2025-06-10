@@ -71,7 +71,19 @@ const Main = () => {
 
             {error && <p className="error-message">{error}</p>}
 
-            {recipe && <HuggingFaceRecipe recipe={recipe} />}
+            {recipe && 
+                <>
+                    <HuggingFaceRecipe recipe={recipe} />
+                    <button 
+                        className="recipe-button"
+                        onClick={() => {
+                            setIngredients([])
+                            setRecipe("")
+                        }}>
+                        Get another recipe
+                    </button>
+                </>    
+            }
         </main>
     )
 }
